@@ -1,21 +1,11 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: Arial, sans-serif;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,8 +14,10 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 20vmin;
+  pointer-events: none;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +27,47 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.word-cloud {
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.word-cloud .active {
+  color: #61dafb;
+}
+
+.word-cloud .correct {
+  color: #2ecc71;
+}
+
+.word-cloud .incorrect {
+  color: #e74c3c;
+}
+
+.stats {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.stats p {
+  margin-bottom: 5px;
+}
+
+.restart-btn {
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #61dafb;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.restart-btn:hover {
+  background-color: #00b3a7;
 }
